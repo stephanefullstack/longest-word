@@ -1,6 +1,7 @@
 # pylint: disable=missing-docstring
 import string
 import random
+import requests
 
 # pylint: disable=missing-docstring
 class Game:
@@ -19,7 +20,6 @@ class Game:
                 letters.remove(letter)
             else:
                 return False
-        return True
         return self.__check_dictionary(word)
 
     @staticmethod
